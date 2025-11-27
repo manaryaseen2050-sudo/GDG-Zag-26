@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic HTML From Elements</h2>
+    <form>
+        <fieldset>
+         <legend>Personal Information</legend>
+         <label for="user-name">Name(Text):</label>
+         <input type="text" name="user-name" id="user-name" required>
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>Contant & Security</legend>
+         <label for="user-email">Email:</label>
+         <input type="email" name="user-email" id="user-email" required>
+         <br>
+         <br>
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="password" required>
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>Preferences</legend>
+         <label for="color">Favorite Color:</label>
+         <input type="color" name="color" id="user-name" value="#fa0505" >
+        </fieldset>
+        <hr>
+         <fieldset>
+         <legend>Range & Options</legend>
+         <label for="range">Volume(Range 0-100):</label>
+         <input type="range" name="range" id="range" >
+         <br>
+         <br>
+         <P>Select your favorite pet:</P>
+         <input type="radio" name="pet" id="pet" value="Dog">
+         <label for="pet">Dog</label>
+         <br>
+         <input type="radio" name="pet" id="pet" value="Cat">
+         <label for="pet">Cat</label>
+         <br>
+         <input type="radio" name="pet" id="pet" value="Bird">
+         <label for="pet">Bird</label>
+         <br>
+         <br>
+         <p>Interests(Check all that apply):</p>
+          <input type="checkbox" name="interest" id="interest" value="Coding">
+         <label for="interest">Coding</label>
+         <br>
+         <input type="checkbox" name="interest" id="interest" value="Music">
+         <label for="interest">Music</label>
+         <br>
+         <input type="checkbox" name="interest" id="interest" value="Travel" checked>
+         <label for="interest">Travel</label>
+        </fieldset>
+        <hr>
+         <fieldset>
+         <legend>Selection</legend>
+         <label for="country">Choose a Country:</label>
+         <select name="country" id="country" >
+         <option value="1">United Kingdom</option>
+         <option value="2">Egypt</option>
+         <option value="3">Lebanon</option>
+         <option value="4">America</option>
+         </select>
+        </fieldset>
+        <hr>
+        <fieldset>
+        <legend>Comments</legend>
+         Your Comments(Textarea):
+         <br>
+         <textarea name="subject" rows="5" cols="40"></textarea>
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>File Upload</legend>
+         <label for="file">Upload a File:</label>
+         <input type="file" name="file" id="file">
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>Specialized Text Inputs</legend>
+         <label for="search">Search this site:</label>
+         <input type="search" name="search" id="search">
+         <br>
+         <br>
+         <label for="url">Your Website URL:</label>
+         <input type="url" name="url" id="url" placeholder="https//example.com">
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>Data & Time</legend>
+         <label for="date">Date:</label>
+         <input type="date" name="date" id="date">
+         <br>
+         <br>
+         <label for="month">Month:</label>
+         <input type="month" name="month" id="month">
+         <br>
+         <br>
+         <label for="time">Time:</label>
+         <input type="time" name="time" id="time">
+        </fieldset>
+        <hr>
+        <fieldset>
+         <legend>Datalist (Suggestions)</legend>
+         <label >Choose a Browser (with Suggestions):</label>
+         <input list="Browser" name="Browser">
+         <datalist id="Browser">
+           <option value="google">
+           <option value="chrome">
+           <option value="microsoft">
+         </datalist>
+        </fieldset>
+        <hr>
+        <br>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Clear Form">
+    </form>
+    
+</body>
+</html>
