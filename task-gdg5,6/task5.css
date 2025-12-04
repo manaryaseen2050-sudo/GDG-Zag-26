@@ -1,0 +1,46 @@
+.shadow{
+     text-align: center;
+     font-weight: blod;
+     font-size: 100px;
+   text-shadow : 3px 0px 0px rgb(237, 90, 5) ,6px 0px 0px rgb(18, 52, 185),7px 0px 0px rgb(233, 25, 216);
+}  
+*{
+ font-family: Arial, sans-serif;
+}
+.one{
+   text-align: center;
+   text-transform: uppercase; 
+   font-size: 50px;
+
+}
+.two{
+   text-align: center;
+   text-transform:capitalize; 
+   font-size: 50px;
+}
+.three{
+   text-align: center;
+   text-transform:lowercase; 
+   font-size: 50px;
+}
+div{
+    width: 400px;
+    background-color: rgba(198, 196, 196, 0.47);
+    padding: 40px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div:hover{
+   overflow: visible;
+}
+a{
+     text-transform:capitalize;
+     text-decoration: none;
+     padding:90px;
+     margin-left:800px;
+     background-color:rgb(6, 92, 63);
+     color: white;
+     font-size: 80px;
+     border-bottom:55px solid rgb(3, 49, 3);
+}
