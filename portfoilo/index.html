@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manar Yassin — UI/UX Designer & Frontend Developer crafting intuitive, user-centered digital experiences. View portfolio, projects, and contact information.">
+  <meta name="keywords" content="Manar Yassin, UI/UX Designer, Frontend Developer, Portfolio, Figma, Web Design">
+  <meta name="author" content="Manar Yassin">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Manar Yassin | UI/UX Designer & Frontend Developer">
+  <meta property="og:description" content="Premium portfolio showcasing UI/UX design and frontend development projects.">
+  <meta property="og:type" content="website">
+  <title>Manar Yassin | UI/UX Designer & Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Pegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <div class="loader-content">
+      <div class="loader-orbit">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="loader-name">Manar Yassin</p>
+      <p class="loader-tag">Portfolio Loading</p>
+    </div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">Manar Yassin</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun icon-light"></i>
+        <i class="fa-solid fa-moon icon-dark"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">Hello, I'm</p>
+          <h1 class="hero-title reveal">Manar Yassin</h1>
+          <p class="hero-typed reveal">
+            <span id="typedText"></span><span class="typed-cursor">|</span>
+          </p>
+          <p class="hero-desc reveal">UI/UX Designer & Front-End Developer crafting intuitive, user-centered digital experiences. Passionate about turning complex problems into simple, elegant solutions through thoughtful UX, pixel-perfect UI, and clean, responsive interfaces. Designing with empathy, building with purpose.</p>
+          <div class="hero-actions reveal">
+            <a href="./Manar_Yassin_CV_ATS_BoldHeadings.pdf" target="_blank rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+            <a href="#projects" class="btn btn-outline"><i class="fa-solid fa-briefcase"></i> View Projects</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-glow"></div>
+          <div class="hero-image-wrap glass-card">
+            <div class="hero-image-placeholder">
+          <img src="./home.jpg" alt="">
+            </div>
+          </div>
+          <div class="float-card float-card-1 glass-card"><i class="fa-brands fa-figma"></i>UI/UX Designer</div>
+          <div class="float-card float-card-2 glass-card"><i class="fa-solid fa-code"></i> Frontend</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Crafting Digital Experiences</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-image-wrap glass-card">
+              <div class="about-image-placeholder">
+                <!-- <i class="fa-solid fa-user-astronaut"></i> -->
+                  <img src="./about.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>I'm a <strong>UI/UX Designer</strong> passionate about creating simple, beautiful, and user-friendly digital experiences.</p>
+            <p>I specialize in <strong>UI/UX Design</strong>, <strong>User Research</strong>, <strong>Wireframing</strong>, <strong>Prototyping</strong>, and <strong>Frontend Development</strong> to solve real user problems and create meaningful digital products.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section" id="education">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Journey</h2>
+        </header>
+        <div class="timeline">
+          <article class="timeline-card glass-card reveal">
+            <div class="timeline-marker"></div>
+            <span class="timeline-date">2023 – Present</span>
+            <h3>Computer Science Department</h3>
+            <p class="timeline-institution">Faculty of Sciences, Zagazig University</p>
+            <ul class="timeline-courses">
+              <li><i class="fa-solid fa-check"></i> UI/UX Design</li>
+              <li><i class="fa-solid fa-check"></i> Frontend Development</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">What I Do Best</h2>
+        </header>
+        <div class="skills-layout">
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fa-solid fa-pen-ruler"></i> Design</h3>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-figma"></i> UX Researcher</span>
+                <span class="skill-percent">92%</span>
+              </div>
+               <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-figma"></i> UX Designer</span>
+                <span class="skill-percent">85%</span>
+              </div>
+               <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-figma"></i> UI Designer</span>
+                <span class="skill-percent">97%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+          </div>
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fa-solid fa-code"></i> Frontend</h3>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item glass-card">
+              <div class="skill-header">
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <div class="project-img-placeholder"><img src="./app.jpg" alt=""></div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=296-2&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Girls Ride App</h3>
+              <p>A mobile application designed to connect girls with safe and comfortable transportation. It allows female users to request rides from trusted female drivers, ensuring privacy and security.</p>
+              <div class="project-tags">
+                <span>Figma</span><span>UX Research</span><span>Prototyping</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=296-2&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="https://github.com/manaryaseen2050-sudo" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <div class="project-img-placeholder"><img src="./site.jpg" alt=""></div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=631-1119&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Girls Driver Website</h3>
+              <p>A web platform that connects girls with female drivers for safe rides and transportation services.</p>
+              <div class="project-tags">
+                <span>Figma</span><span>UI Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=631-1119&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="https://github.com/manaryaseen2050-sudo" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <div class="project-img-placeholder"><img src="./kotab.jpg" alt=""></div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=504-436&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>EasyRead Platform</h3>
+              <p>A reading platform that helps users easily discover and find books according to their interests and needs.</p>
+              <div class="project-tags">
+                <span>UX Design</span><span>Figma</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=504-436&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="https://github.com/manaryaseen2050-sudo" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <div class="project-img-placeholder"><img src="./platform.jpg" alt=""></div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/Wf1DoWPrBjgDX8TtyT6jF9/Untitled?node-id=35-2&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>EduAll Platform</h3>
+              <p>A comprehensive online learning platform that includes courses covering all curricula and educational levels.</p>
+              <div class="project-tags">
+                <span>UI/UX Design</span><span>Figma</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://www.figma.com/design/Wf1DoWPrBjgDX8TtyT6jF9/Untitled?node-id=35-2&t=M3R8LjvpTDixqpbO-1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <a href="https://github.com/manaryaseen2050-sudo" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- GitHub Projects -->
+        <div class="github-section reveal">
+          <h3 class="github-title"><i class="fa-brands fa-github"></i> Frontend Projects from GitHub</h3>
+          <div class="github-grid" id="githubProjects">
+            <div class="github-loading glass-card">
+              <i class="fa-solid fa-spinner fa-spin"></i>
+              <p>Loading GitHub projects...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="certificates section" id="certificates">
+      <section class="certificates section" id="certificates">
+  <div class="container">
+
+    <header class="section-header reveal">
+      <span class="section-tag">Achievements</span>
+      <h2 class="section-title">Certifications</h2>
+    </header>
+
+    <div class="cert-slider">
+
+      <div class="cert-track">
+
+        <!-- NTI -->
+        <a href="رابط شهادة NTI"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>UI/UX Design</h3>
+          <span class="issuer">NTI</span>
+        </a>
+
+        <!-- GDG -->
+        <a href= "https://drive.google.com/file/d/1X4uIicTv7K4HRUlADWMpv43dKAnfV2tB/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+
+          <h3>UI/UX Design</h3>
+          <span class="issuer">GDG Camp</span>
+        </a>
+
+        <!-- Database -->
+        <a href="https://drive.google.com/file/d/1VR9TNh-n-k1SYPy_BAVmIwL92QSC9c2y/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <h3>Database</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- Algorithms -->
+        <a href="https://drive.google.com/file/d/1F7gScI8te74cWGVprnOE9zJTTEJS84xm/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+
+          <h3>Algorithms</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- C++ -->
+        <a href="https://drive.google.com/file/d/1LHJ3vhMYHJp_tgCNESwkd58Oz3NMayqE/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>C++ Programming</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- OOP -->
+        <a href="https://drive.google.com/file/d/1BVA07wPblMiZpG0TdHkCJsiwzNxnVcvh/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+
+          <h3>Object Oriented Programming</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- Foundations -->
+        <a href="https://drive.google.com/file/d/1_vARvvd7dRXn-8D_IC5IWrx_CQ3WJiDU/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>Programming Foundations</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- Duplicate for infinite scroll -->
+
+        <a href="رابط شهادة NTI" target="_blank" class="cert-card glass-card">
+          <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>UI/UX Design</h3>
+          <span class="issuer">NTI</span>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1X4uIicTv7K4HRUlADWMpv43dKAnfV2tB/view?usp=drivesdk" target="_blank" class="cert-card glass-card">
+          <div class="cert-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UI/UX Design</h3>
+          <span class="issuer">GDG Camp</span>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1VR9TNh-n-k1SYPy_BAVmIwL92QSC9c2y/view?usp=drivesdk" target="_blank" class="cert-card glass-card">
+          <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </header>
+      
+
+          <div class="contact-info reveal">
+            <a href="mailto:manar.yassin.software@gmail.com" class="contact-card glass-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>manar.yassin.software@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://wa.me/201229074984" class="contact-card glass-card" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>01229074984</p>
+              </div>
+            </a>
+            <div class="contact-card glass-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Mit Ghamr, Ad Daqahliyah, Egypt</p>
+              </div>
+            </div>
+            <div class="contact-social glass-card">
+              <h4>Follow Me</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/manar-yassin-6b9952336" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/manaryassen1" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://github.com/manaryaseen2050-sudo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/201229074984" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">Manar Yassin</a>
+        <p>UI/UX Designer &amp; Frontend Developer crafting premium digital experiences.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Social Media</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/manar-yassin-6b9952336" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.behance.net/manaryassen1" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          <a href="https://github.com/manaryaseen2050-sudo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://wa.me/201229074984" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Manar Yassin. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
