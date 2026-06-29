@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="500" y2="600">
+      <stop stop-color="#FCF5EB"/>
+      <stop offset="1" stop-color="#FFC0DB" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F70073"/>
+      <stop offset="0.5" stop-color="#FF5CA5"/>
+      <stop offset="1" stop-color="#FFC0DB"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop stop-color="#F70073" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#F70073" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="600" fill="url(#bg)"/>
+  <rect width="500" height="600" fill="url(#glow)"/>
+  <circle cx="250" cy="180" r="90" fill="url(#accent)" opacity="0.2"/>
+  <ellipse cx="250" cy="420" rx="120" ry="140" fill="url(#accent)" opacity="0.85"/>
+  <circle cx="250" cy="165" r="75" fill="#FFD4E8"/>
+  <circle cx="225" cy="155" r="8" fill="#333"/>
+  <circle cx="275" cy="155" r="8" fill="#333"/>
+  <path d="M235 185 Q250 200 265 185" stroke="#F70073" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M190 250 Q250 220 310 250 L310 420 Q250 400 190 420 Z" fill="url(#accent)" opacity="0.9"/>
+  <rect x="60" y="480" width="380" height="60" rx="12" fill="white" opacity="0.9"/>
+  <text x="250" y="518" text-anchor="middle" font-family="Poppins,sans-serif" font-size="22" font-weight="700" fill="#F70073">Manar Yassin</text>
+  <text x="250" y="545" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#666">UI/UX Designer</text>
+</svg>

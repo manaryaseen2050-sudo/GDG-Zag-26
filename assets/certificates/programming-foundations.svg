@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <rect width="300" height="200" rx="8" fill="#fff" stroke="#F70073" stroke-width="2"/>
+  <rect x="0" y="0" width="300" height="40" fill="url(#g)"/>
+  <text x="150" y="28" text-anchor="middle" font-family="Poppins,sans-serif" font-size="13" font-weight="700" fill="#fff">Programming Foundations</text>
+  <text x="150" y="90" text-anchor="middle" font-family="Poppins,sans-serif" font-size="16" font-weight="600" fill="#333">Certificate of Achievement</text>
+  <text x="150" y="130" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#666">Programming Advices</text>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="300" y2="0"><stop stop-color="#F70073"/><stop offset="1" stop-color="#FF5CA5"/></linearGradient></defs>
+</svg>

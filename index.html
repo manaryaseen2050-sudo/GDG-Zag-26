@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manar Yassin — UI/UX Designer & Frontend Developer crafting intuitive, user-centered digital experiences.">
+  <meta name="keywords" content="Manar Yassin, UI/UX Designer, Frontend Developer, Portfolio, Figma, Web Design">
+  <meta name="author" content="Manar Yassin">
+  <meta name="theme-color" content="#F70073">
+  <meta property="og:title" content="Manar Yassin | UI/UX Designer & Frontend Developer">
+  <meta property="og:description" content="Crafting intuitive, user-centered digital experiences with pixel-perfect UI and thoughtful UX.">
+  <meta property="og:type" content="website">
+  <title>Manar Yassin | UI/UX Designer & Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo">Manar Yassin</div>
+      <div class="loader__bar"><span class="loader__progress"></span></div>
+      <p class="loader__text">Loading Experience</p>
+    </div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Page scroll progress">
+    <span class="scroll-progress__bar"></span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__container container" aria-label="Main navigation">
+      <a href="#home" class="navbar__logo" aria-label="Manar Yassin Home">
+        <span class="navbar__logo-text">Manar Yassin</span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#home" class="navbar__link active">Home</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#education" class="navbar__link">Education</a></li>
+        <li><a href="#skills" class="navbar__link">Skills</a></li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#certificates" class="navbar__link">Certificates</a></li>
+        <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+        <li><a href="#services" class="navbar__link">Services</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <!-- <a href="assets/Manar-Yassin-CV.html" class="btn btn--primary btn--sm navbar__cv" target="_blank" rel="noopener">Download CV</a> -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="hero__gradient"></div>
+        <div class="hero__grid"></div>
+        <div class="floating-shapes">
+          <span class="shape shape--1"></span>
+          <span class="shape shape--2"></span>
+          <span class="shape shape--3"></span>
+          <span class="shape shape--4"></span>
+          <span class="shape shape--5"></span>
+        </div>
+      </div>
+
+      <div class="hero__container container">
+        <div class="hero__content reveal fade-up">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Manar Yassin</h1>
+          <div class="hero__title-wrap">
+            <span class="hero__title-label">UI/UX Designer &amp;</span>
+            <span class="hero__typing" id="typingText" aria-live="polite"></span>
+            <span class="hero__cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="hero__desc">UI/UX designer crafting intuitive, user-centered digital experiences. Passionate about turning complex problems into simple, elegant solutions—designing with empathy, building with purpose. Pixel-perfect UI meets thoughtful UX for products that are both beautiful and easy to use.</p>
+          <div class="hero__buttons">
+            <a href="./Manar_Yassin_ATS_Professional_CV_Final.pdf" class="btn btn--primary btn--magnetic" target="_blank" rel="noopener">Download CV</a>
+            <a href="#projects" class="btn btn--outline btn--magnetic">View Projects</a>
+            <!-- <a href="#contact" class="btn btn--ghost btn--magnetic">Contact Me</a> -->
+          </div>
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/manar-yassin-6b9952336" target="_blank" rel="noopener noreferrer" class="hero__social-link glow-hover" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.behance.net/manaryassen1" target="_blank" rel="noopener noreferrer" class="hero__social-link glow-hover" aria-label="Behance">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+            </a>
+            <a href="https://github.com/manaryaseen2050-sudo" target="_blank" rel="noopener noreferrer" class="hero__social-link glow-hover" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap reveal fade-left" data-parallax="0.05">
+          <div class="hero__image-glow"></div>
+          <div class="hero__image-frame">
+            <img src="./home.jpg" alt="Manar Yassin — UI/UX Designer" class="hero__image" width="500" height="600" loading="eager">
+          </div>
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Available for work
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image-wrap reveal fade-right" data-tilt>
+            <div class="about__image-glow"></div>
+            <img src="./about.jpg" alt="Manar Yassin working on UI design" class="about__image" width="480" height="560" loading="lazy">
+          </div>
+          <div class="about__content reveal fade-left">
+            <span class="section__tag">About Me</span>
+            <h2 class="section__title">Crafting Digital Experiences with Purpose</h2>
+            <p class="about__text">I'm a <strong>UI/UX Designer</strong> passionate about creating simple, beautiful, and user-friendly digital experiences.</p>
+            <p class="about__text">I specialize in <strong>UI Design</strong>, <strong>UX Design</strong>, <strong>Wireframing</strong>, <strong>Prototyping</strong>, <strong>Design Systems</strong>, and <strong>Frontend Development</strong> to solve real user problems.</p>
+            <div class="about__stats">
+              <div class="stat-card reveal zoom-in" data-count="12">
+                <span class="stat-card__number"><span class="counter" data-target="12">0</span>+</span>
+                <span class="stat-card__label">Projects Completed</span>
+              </div>
+              <div class="stat-card reveal zoom-in" data-count="7">
+                <span class="stat-card__number"><span class="counter" data-target="7">0</span></span>
+                <span class="stat-card__label">Certificates</span>
+              </div>
+              <div class="stat-card reveal zoom-in" data-count="3">
+                <span class="stat-card__number"><span class="counter" data-target="3">0</span>+</span>
+                <span class="stat-card__label">Years Learning</span>
+              </div>
+              <div class="stat-card reveal zoom-in" data-count="8">
+                <span class="stat-card__number"><span class="counter" data-target="8">0</span>+</span>
+                <span class="stat-card__label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section__header reveal fade-up">
+          <span class="section__tag">Education</span>
+          <h2 class="section__title">My Academic Journey</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item reveal fade-right">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass-card">
+              <span class="timeline__date">2023 – Present</span>
+              <h3 class="timeline__title">Computer Science Department</h3>
+              <p class="timeline__subtitle">Faculty of Sciences — Zagazig University</p>
+              <div class="timeline__courses">
+                <span class="timeline__course-tag">UI/UX Design</span>
+                <span class="timeline__course-tag">Frontend Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header reveal fade-up">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Tools &amp; Expertise</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__category reveal fade-up">
+            <h3 class="skills__category-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              UI/UX Skills
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>Figma</span><span>95%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="95"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>Wireframing</span><span>90%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="90"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>Prototyping</span><span>88%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="88"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>User Research</span><span>85%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="85"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>Design Systems</span><span>92%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="92"></span></div>
+            </div>
+          </div>
+          <div class="skills__category reveal fade-up">
+            <h3 class="skills__category-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              Frontend Skills
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>HTML</span><span>95%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="95"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>CSS</span><span>92%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="92"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header"><span>JavaScript</span><span>85%</span></div>
+              <div class="skill-item__bar"><span class="skill-item__progress" data-progress="85"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header reveal fade-up">
+          <span class="section__tag">Projects</span>
+          <h2 class="section__title">Featured Work</h2>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card reveal fade-up" data-tilt>
+            <div class="project-card__image">
+              <img src="./app.jpg" alt="Girls Ride App" width="600" height="400" loading="lazy">
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Girls Ride App</h3>
+              <p class="project-card__desc">A mobile application designed to connect girls with safe and comfortable transportation. It allows female users to request rides from trusted female drivers, ensuring privacy and security.</p>
+              <div class="project-card__tech">
+                <span class="project-card__tag">Figma</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=296-2&t=M3R8LjvpTDixqpbO-1" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" data-tilt>
+            <div class="project-card__image">
+              <img src="./site.jpg" alt="Girls Driver Website" width="600" height="400" loading="lazy">
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Girls Driver Website</h3>
+              <p class="project-card__desc">A web platform that connects girls with female drivers for safe rides and transportation services.</p>
+              <div class="project-card__tech">
+                <span class="project-card__tag">Figma</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=631-1119&t=M3R8LjvpTDixqpbO-1" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" data-tilt>
+            <div class="project-card__image">
+              <img src="./kotab.jpg" alt="EasyRead Platform" width="600" height="400" loading="lazy">
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">EasyRead Platform</h3>
+              <p class="project-card__desc">A reading platform that helps users easily discover and find books according to their interests and needs.</p>
+              <div class="project-card__tech">
+                <span class="project-card__tag">Figma</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://www.figma.com/design/sAY0e1662pHcXo0RcqqKX3/UI--nti-?node-id=504-436&t=M3R8LjvpTDixqpbO-1" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" data-tilt>
+            <div class="project-card__image">
+              <img src="./platform.jpg" alt="EduAll Platform" width="600" height="400" loading="lazy">
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">EduAll Platform</h3>
+              <p class="project-card__desc">A comprehensive online learning platform that includes courses covering all curricula and educational levels.</p>
+              <div class="project-card__tech">
+                <span class="project-card__tag">Figma</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://www.figma.com/design/Wf1DoWPrBjgDX8TtyT6jF9/Untitled?node-id=35-2&t=M3R8LjvpTDixqpbO-1" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" data-tilt>
+            <div class="project-card__image">
+              <img src="assets/projects/frontend.svg" alt="Frontend Projects" width="600" height="400" loading="lazy">
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Frontend Projects</h3>
+              <p class="project-card__desc">Collection of frontend development projects built with HTML, CSS, and JavaScript for GDG Zagazig 2026.</p>
+              <div class="project-card__tech">
+                <span class="project-card__tag">HTML</span>
+                <span class="project-card__tag">CSS</span>
+                <span class="project-card__tag">JavaScript</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/manaryaseen2050-sudo/GDG-Zag-26" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+<!-- Certificates -->
+    <section class="certificates section" id="certificates">
+
+  <div class="container">
+
+    <header class="section-header reveal">
+      <!-- <span class="section-tag">Achievements</span> -->
+      <h2 class="section-title">Certifications</h2>
+    </header>
+
+    <div class="cert-slider">
+
+      <div class="cert-track">
+
+        <!-- NTI -->
+        <a href="رابط شهادة NTI"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>UI/UX Design</h3>
+          <span class="issuer">NTI</span>
+        </a>
+
+        <!-- GDG -->
+        <a href= "https://drive.google.com/file/d/1X4uIicTv7K4HRUlADWMpv43dKAnfV2tB/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+
+          <h3>UI/UX Design</h3>
+          <span class="issuer">GDG Camp</span>
+        </a>
+
+        <!-- Database -->
+        <a href="https://drive.google.com/file/d/1VR9TNh-n-k1SYPy_BAVmIwL92QSC9c2y/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <h3>Database</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- Algorithms -->
+        <a href="https://drive.google.com/file/d/1F7gScI8te74cWGVprnOE9zJTTEJS84xm/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+
+          <h3>Algorithms</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- C++ -->
+        <a href="https://drive.google.com/file/d/1LHJ3vhMYHJp_tgCNESwkd58Oz3NMayqE/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>C++ Programming</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- OOP -->
+        <a href="https://drive.google.com/file/d/1BVA07wPblMiZpG0TdHkCJsiwzNxnVcvh/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+
+          <h3>Object Oriented Programming</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+        <!-- Foundations -->
+        <a href="https://drive.google.com/file/d/1_vARvvd7dRXn-8D_IC5IWrx_CQ3WJiDU/view?usp=drivesdk"
+           target="_blank"
+           class="cert-card glass-card">
+
+          <div class="cert-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>Programming Foundations</h3>
+          <span class="issuer">Programming Advices</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__header reveal fade-up">
+          <span class="section__tag">Testimonials</span>
+          <h2 class="section__title">What Clients Say</h2>
+        </div>
+        <div class="testimonials__slider-wrap">
+          <div class="testimonials__slider" id="testimonialsSlider">
+            <div class="testimonial-card glass-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Manar delivered an exceptional UI/UX design for our app. Her attention to detail and user-centered approach transformed our product completely."</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-1.svg" alt="Sarah Ahmed" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Sarah Ahmed</span>
+                  <span class="testimonial-card__role">Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Working with Manar was a pleasure. She understood our vision perfectly and created designs that exceeded our expectations."</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-2.svg" alt="Omar Hassan" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Omar Hassan</span>
+                  <span class="testimonial-card__role">Startup Founder</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Her Figma prototypes are pixel-perfect and her frontend skills bring designs to life beautifully. Highly recommended!"</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-3.svg" alt="Nour El-Din" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Nour El-Din</span>
+                  <span class="testimonial-card__role">Tech Lead</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Manar's design system work streamlined our entire development process. Professional, creative, and always on time."</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-4.svg" alt="Layla Mahmoud" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Layla Mahmoud</span>
+                  <span class="testimonial-card__role">Design Director</span>
+                </div>
+              </div>
+            </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="testimonial-card glass-card" aria-hidden="true">
+              <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Manar delivered an exceptional UI/UX design for our app. Her attention to detail and user-centered approach transformed our product completely."</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-1.svg" alt="" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Sarah Ahmed</span>
+                  <span class="testimonial-card__role">Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card" aria-hidden="true">
+              <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-card__text">"Working with Manar was a pleasure. She understood our vision perfectly and created designs that exceeded our expectations."</p>
+              <div class="testimonial-card__author">
+                <img src="assets/images/client-2.svg" alt="" width="48" height="48" loading="lazy">
+                <div>
+                  <span class="testimonial-card__name">Omar Hassan</span>
+                  <span class="testimonial-card__role">Startup Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header reveal fade-up">
+          <span class="section__tag">Services</span>
+          <h2 class="section__title">What I Offer</h2>
+        </div>
+        <div class="services__grid">
+          <div class="service-card reveal fade-up" data-tilt>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__desc">Creating intuitive, beautiful interfaces and seamless user experiences from research to high-fidelity prototypes.</p>
+            <div class="service-card__tool">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 24V8.667C8 7.2 9.2 6 10.667 6h2.666C14.8 6 16 7.2 16 8.667V24H8z"/><path d="M0 24V12.667C0 11.2 1.2 10 2.667 10h2.666C6.8 10 8 11.2 8 12.667V24H0z"/><path d="M16 24V4.667C16 3.2 17.2 2 18.667 2h2.666C22.8 2 24 3.2 24 4.667V24H16z"/></svg>
+              Figma
+            </div>
+          </div>
+          <div class="service-card reveal fade-up" data-tilt>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Frontend Development</h3>
+            <p class="service-card__desc">Building responsive, performant websites with clean code, modern animations, and pixel-perfect implementation.</p>
+            <div class="service-card__tool">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 0L15.5 16.5L12 18L8.5 16.5L6.5 0H17.5ZM12 16.2L13.8 15.3L15.2 4.8H8.8L10.2 15.3L12 16.2Z"/></svg>
+              Visual Studio Code
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </header>
+      
+
+          <div class="contact-info reveal">
+            <a href="mailto:manar.yassin.software@gmail.com" class="contact-card glass-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>manar.yassin.software@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://wa.me/201229074984" class="contact-card glass-card" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>01229074984</p>
+              </div>
+            </a>
+            <div class="contact-card glass-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Mit Ghamr, Ad Daqahliyah, Egypt</p>
+              </div>
+            </div>
+            <div class="contact-social glass-card">
+              <h4>Follow Me</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/manar-yassin-6b9952336" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/manaryassen1" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://github.com/manaryaseen2050-sudo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/201229074984" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">Manar Yassin</a>
+          <p class="footer__desc">UI/UX Designer &amp; Frontend Developer crafting beautiful digital experiences.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Me</h4>
+          <div class="footer__social-icons">
+            <a href="https://www.linkedin.com/in/manar-yassin-6b9952336" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.behance.net/manaryassen1" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+            </a>
+            <a href="https://github.com/manaryaseen2050-sudo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Manar Yassin. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
